@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+nav {
+  background-color: #cc0033;
+  height: 40px; }
+
+.nav-left {
+  float: left; }
+
+.nav-right {
+  float: right; }
+  
+.nav-right-item{
+  list-style: none;
+  float: left;
+}
+section {
+  background-color: #000000; }
+
+/*# sourceMappingURL=index.css.map */

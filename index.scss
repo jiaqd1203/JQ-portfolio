@@ -1,0 +1,28 @@
+$headercolor:#cc0033;
+$bodycolor: #000000;
+$footercolor: #003399;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: $headercolor;
+    height: 40px;
+}
+
+.nav-left{
+    float: left;
+}
+
+.nav-right{
+    float: right;
+}
+
+section{
+    background-color: $bodycolor;
+}
+footer{
+
+}
