@@ -6,31 +6,69 @@
   box-sizing: border-box;
 }
 
+body{
+  background-color: #181830;
+  
+}
+
 nav {
-  background-color: #cc0033;
-  height: 40px; 
+  /* background-color: #cc0033; */
+  background: linear-gradient(90deg,#cc1020,#164080);
+  height: 70px; 
 }
 
 .nav-left {
   float: left; 
+  margin-left: 5%;
+  line-height: 70px;
 }
 
 .nav-right {
-  float: right; 
+  float: right;
+  margin-right: 5%;
+  line-height: 70px; 
 }
 
 .nav-left a,
 .nav-right a{
-  color: #9d9d9d;
+  color: #f0f0f0;
   text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
 } 
+.nav-left a:hover,
+.nav-right a:hover{
+  color: #fbc440;
+}
 
 .nav-right-item{
   list-style: none;
   float: left;
+  margin: 0 20px;
 }
-section {
-  background-color: #000000; 
+
+#welcome-section{
+  height: 100vh;
+  width: 100%;
+  background-color: #500500;
+}
+
+#projects{
+  height: 100vh;
+  width: 100%;
+  background-color: #154284;
+}
+
+#contact{
+  height: 100vh;
+  width: 100%;
+  background-color: #181733;
+}
+
+footer{
+  height: 70px;
+  width: 100%;
+  background-color: #000000;   
 }
 
 /*# sourceMappingURL=index.css.map */
