@@ -1,22 +1,36 @@
+
+
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0; 
+  box-sizing: border-box;
+}
 
 nav {
   background-color: #cc0033;
-  height: 40px; }
+  height: 40px; 
+}
 
 .nav-left {
-  float: left; }
+  float: left; 
+}
 
 .nav-right {
-  float: right; }
-  
+  float: right; 
+}
+
+.nav-left a,
+.nav-right a{
+  color: #9d9d9d;
+  text-decoration: none;
+} 
+
 .nav-right-item{
   list-style: none;
   float: left;
 }
 section {
-  background-color: #000000; }
+  background-color: #000000; 
+}
 
 /*# sourceMappingURL=index.css.map */
