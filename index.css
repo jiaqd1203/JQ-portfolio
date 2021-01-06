@@ -53,6 +53,15 @@ nav {
   background-color: #500500;
 }
 
+#welcome-section h1{
+    text-align: center;
+    
+}
+
+#welcome-section p{
+    text-align: center;
+}
+
 #projects{
   height: 100vh;
   width: 100%;
