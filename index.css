@@ -54,12 +54,18 @@ nav {
 }
 
 #welcome-section h1{
-    text-align: center;
-    
+    font-size: 8rem;
+    font-weight: 600;
+    /* 加上这个才居中？ */
+    padding-top: 100px;
 }
 
 #welcome-section p{
     text-align: center;
+    font-size: 3rem;
+    color: #181717;
+    opacity: 70%;
+    
 }
 
 #projects{
