@@ -74,6 +74,15 @@ nav {
   background-color: #154284;
 }
 
+#projects div{
+  float: left;
+  margin-left: 10%;
+  margin-top: 10%;
+  width: 30%;
+  height: 300px;
+  background-color: #fff;
+}
+
 #contact{
   height: 100vh;
   width: 100%;
