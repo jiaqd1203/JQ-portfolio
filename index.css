@@ -50,7 +50,9 @@ nav {
 #welcome-section{
   height: 700px;
   width: 100%;
-  background-color: #500500;
+  /* background-color: #500500; */
+  background: linear-gradient(0deg,#181733 10%,rgba(173,16,40,.5));
+  /* background: linear-gradient(0deg,#181733 0,#181733 30%); */
 }
 
 #welcome-section h1{
@@ -73,13 +75,16 @@ nav {
   width: 100%;
   /* background-color: #154284; */
   background-color: #181733;
+  /* background: linear-gradient(0deg,#181733 30%,#181733 0); */
 }
 
 #projects h2{
   height: 100px;
+  width: 400px;
   font-size: 3rem;
   font-weight: 700;
-  text-align: center;
+  /* text-align: center; */
+  margin: 0 auto;
   line-height: 100px;
   color: #f0f0f0;
 }
@@ -209,13 +214,40 @@ nav {
 
 #contact form .contact-button:hover{
   background: linear-gradient(270deg,#154284,#cd122d);  
+  box-shadow: 0 0.1rem 0.4rem 0 rgba(0,0,0,.5);
+  transform: translateY(.1rem);
 }
 
+.contact-links{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.contact-links a{
+  text-decoration: none;  
+  color:#888888 ;
+  /* color: #c8c8c8;   */
+  margin:0 2%;
+}
+
+.contact-links a:hover{
+  transform: translateY(-4px);
+  color: #f0f0f0;
+  transition: all 250ms ease-in-out;
+}
 
 footer{
   width: 100%;
-  background-color: #000000;
-     
+  background-color: #000000;   
+}
+
+footer p{
+  color: #f0f0f0;
+  background: linear-gradient(90deg,#cc1020,#164080);
+  padding-left: 2%;
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=index.css.map */
