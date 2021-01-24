@@ -80,18 +80,16 @@
         <div class="row">
             <div class="col-md-4 contact-text">
                 <label for="Title">Title</label>
-                <input type="text" placeholder="Mr">
+                <!-- <input type="text" placeholder="Mr"> -->
                 <!--这个不好使，需要用SVG<i class="bi bi-caret-down-fill"></i>-->
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-                  </svg>
-            </div>
-            <ul class="col-md-4">
-                <li><span>Mr</span></li>
-                <li><span>Mrs</span></li>
-                <li><span>Ms</span></li>
-                <li><span>Dr</span></li>
-            </ul>
+                <!-- bi-caret-down-fill加不进去这个图标 -->
+                <select class="form-select form-select-lg">                                        
+                    <option value="1" selected>Mr</option>
+                    <option value="2">Mrs</option>
+                    <option value="3">Ms</option>
+                    <option value="4">Dr</option>                                        
+                </select>
+            </div>           
             <div class="col-md-8 contact-text">
                 <label for="Name">Name</label>
                 <input type="text">
