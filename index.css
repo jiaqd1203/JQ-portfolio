@@ -15,6 +15,9 @@ nav {
   /* background-color: #cc0033; */
   background: linear-gradient(90deg,#cc1020,#164080);
   height: 70px; 
+  position: fixed;
+  width: 100%;
+  z-index: 200;
 }
 
 .nav-left {
@@ -39,12 +42,32 @@ nav {
 .nav-left a:hover,
 .nav-right a:hover{
   color: #fbc440;
+  transition: all 250ms ease-in-out;
 }
 
 .nav-right-item{
   list-style: none;
   float: left;
   margin: 0 20px;
+  position: relative;
+}
+/* left=0,hover left=50%即可从中间开始变化 */
+.nav-right a:hover:after{
+  width: 100%;
+  transition: all 0.3s ease;
+  background-color: #fbc440;
+  left: 0;
+}
+
+.nav-right-item a:after{
+  content: '';
+  height: 2px;
+  width: 0;
+  /* background-color: #fff; */
+  display: block;
+  position: absolute;
+  top: 55.5px;
+  left: 50%;  
 }
 
 #welcome-section{
@@ -289,6 +312,7 @@ nav {
   background: linear-gradient(270deg,#154284,#cd122d);  
   box-shadow: 0 0.1rem 0.4rem 0 rgba(0,0,0,.5);
   transform: translateY(.1rem);
+  /* transition: all 500ms ease-in-out; */
 }
 
 .contact-links{
