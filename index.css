@@ -97,6 +97,15 @@ nav {
 
 }
 
+#skill-section .skills{
+
+}
+
+#skill-section .skills .skill{
+  background-color:#fff;
+}
+
+
 
 #projects{
   height: 100vh;
