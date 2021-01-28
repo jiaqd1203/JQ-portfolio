@@ -71,7 +71,7 @@ nav {
 }
 
 #welcome-section{
-  height: 700px;
+  height: 1000px;
   width: 100%;
   /* background-color: #500500; */
   background: linear-gradient(0deg,#181733 10%,rgba(173,16,40,.5));
@@ -89,23 +89,45 @@ nav {
     text-align: center;
     font-size: 3rem;
     color: #181717;
-    opacity: 70%;
-    
+    opacity: 70%;    
 }
 
 #skill-section{
-
+  margin-top: 200px;
+  margin-bottom: 400px;
+  /* #154284 */
+  background: linear-gradient(90deg,#cd122d,#154284);
+  border-radius: 5px;
 }
 
 #skill-section .skills{
-
+ padding: 0 16px;
+ text-align: center;
 }
 
 #skill-section .skills .skill{
-  background-color:#fff;
+  cursor: pointer;
+  background-color: #fff;
+  list-style: none;
+  margin: 20px auto;
+  padding: 14px;
+  border-radius: 4%;
+  transition: 250ms transform ease-in-out;
 }
 
+#skill-section .skills .skill:hover{
+  transform: translateY(-5px);
+  transition: 250ms transform ease-in-out;
+}
 
+#skill-section ul li h3{
+  display: block;
+  font-size: 1rem;
+  color: #154284;
+  color: #cd122d;
+  font-weight: 600;
+  color: #000000;
+}
 
 #projects{
   height: 100vh;
