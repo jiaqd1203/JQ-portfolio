@@ -8,12 +8,12 @@
 
 body{
   background-color: #181830;
-  
+  /* background-color: #161a1d; */
 }
 
 nav {
-  /* background-color: #cc0033; */
-  background: linear-gradient(90deg,#cc1020,#164080);
+  background-color: #181830;
+  /* background: linear-gradient(90deg,#cc1020,#164080); */
   height: 70px; 
   position: fixed;
   width: 100%;
@@ -71,11 +71,12 @@ nav {
 }
 
 #welcome-section{
-  height: 1000px;
+  height: 100vh;
   width: 100%;
   /* background-color: #500500; */
-  background: linear-gradient(0deg,#181733 10%,rgba(173,16,40,.5));
+  background: rgba(173,16,40,.3);
   /* background: linear-gradient(0deg,#181733 0,#181733 30%); */
+  padding-top: 200px;
 }
 
 #welcome-section h1{
@@ -94,15 +95,18 @@ nav {
 
 #skill-section{
   margin-top: 200px;
-  margin-bottom: 400px;
+  margin-bottom: 200px;
   /* #154284 */
-  background: linear-gradient(90deg,#cd122d,#154284);
+  /* background: linear-gradient(90deg,#cd122d,#154284); */
+  background-color: #161a1d;
   border-radius: 5px;
+  width: 100%;
 }
 
 #skill-section .skills{
  padding: 0 16px;
  text-align: center;
+ background: linear-gradient(90deg,#cd122d,#154284);
 }
 
 #skill-section .skills .skill{
@@ -132,17 +136,17 @@ nav {
 #projects{
   height: 100vh;
   width: 100%;
-  /* background-color: #154284; */
-  background-color: #181733;
-  /* background: linear-gradient(0deg,#181733 30%,#181733 0); */
+  /* background-color: #161a1d; */
+  background-color: #000000;
+  padding-top: 20px;
 }
 
 #projects h2{
+  text-align: center;
   height: 100px;
   width: 400px;
   font-size: 3rem;
   font-weight: 700;
-  /* text-align: center; */
   margin: 0 auto;
   line-height: 100px;
   color: #f0f0f0;
@@ -155,10 +159,12 @@ nav {
 
 #projects div{  
   margin-top: 3%;
-  /* height: 300px; */
-  background-color: #181733;
+  background-color: #000000;
+  border: 2px solid transparent;
   /* box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); */
 }
+
+/* 选第二个row#projects .row:nth-of-type(2){} */
 
 #projects div img{  
   width: 97%;
@@ -166,13 +172,14 @@ nav {
 }
 
 #projects div .project:hover{
-  border: 2px solid #580404;
+  /* #580404 */
+  border: 2px solid #fbc440;;
   border-radius: 5px;
 }
 
 #projects div .project:hover p{
   border-top: none;
-  color: #580404;
+  color: #fbc440;;
 }
 
 #projects div p{
@@ -185,36 +192,36 @@ nav {
   margin-bottom: 5px;
   color: #f0f0f0;
   text-align: center;
-  background-color:  #181733;
-  border-top: 1px solid #262b47;
+  background-color:  #000000;
+  
 }
 
 #projects div p:hover{
-  /* color: #fbc440; #886828*/
-  color: #580404;
   cursor: pointer;
 }
 
 #projects .project{
   padding-top: 10px; 
-  /* color */
-  /* background-color: #cc1020; #154284 rgba(154,0,11,.9)*/
-  text-align: center;
-  /*  #cc1020 */
-  /* border: 2px solid rgb(50, 2, 160); */
-  border: 2px solid #2d3458;  
+  text-align: center; 
 }
 
 #contact{
   width: 100%;
   background-color: #000000;
   color: #f0f0f0;
+  border-top: 1px solid;
+}
+
+#contact .container{
+  position: relative;
+  padding-top: 50px;
 }
 
 #contact h2{
   text-align: center;
   font-weight: 700;
   padding-top: 20px;
+  width: 100%;
 }
 
 #contact .contact-text{
@@ -228,10 +235,6 @@ nav {
 ::placeholder{
   font-weight:900;
   font-size: 1rem;
-}
-
-.container{
-  position: relative;
 }
 
 .contact-text .form-select{
@@ -251,36 +254,6 @@ nav {
 .form-select:focus{
   border: #000000;
 }
-/*  
-#contact .contact-text ul{
-  position: absolute;
-  top: 87px;
-  padding-left: 0px;
-  width: 100%;
-  z-index: 100;
-  height: 132px;
-  overflow-y: scroll;
-  overflow-y: overlay;
-}
-#contact .contact-text ul li{
-  color: #000000;
-  background-color: #fff;
-  list-style: none;  
-  font-size: 1rem;
-  height: 44px;
-  line-height: 44px;
-  border-bottom: 1px solid #ddd;
-  padding-left: 20px;
-}
-*/
-
-/* #contact .bi-caret-down-fill{ 
-  position: absolute;
-  top: 57%;
-  left: 6%;
-  color:#000000;
-  size: 5rem;
-}*/
 
 #contact .contact-text .bi-person-fill{
   position: absolute;
@@ -331,21 +304,20 @@ nav {
 }
 
 #contact form .contact-button{ 
-  background-color: #cd122d;
-  /* background: linear-gradient(270deg,#154284,#cd122d); */
-  /* background: linear-gradient(90deg,#cc1029,#163880); */
+  /* background-color: #cd122d; */
+  background-color: transparent;
   color: #f0f0f0;
   font-size: 1.5rem;
   font-weight: 900;
   width: 200px;
   margin: 50px auto;
-  border-color: #1b1515;
+  border: 2px solid #f0f0f0;
   box-shadow: 0 0.1rem 0.1rem 0 rgba(0,0,0,.5);
 }
 
 #contact form .contact-button:hover{
   animation-duration: 2s;
-  background: linear-gradient(270deg,#154284,#cd122d);  
+  /* background: linear-gradient(270deg,#154284,#cd122d);   */
   box-shadow: 0 0.1rem 0.4rem 0 rgba(0,0,0,.5);
   transform: translateY(.1rem);
   /* transition: all 500ms ease-in-out; */
@@ -378,7 +350,8 @@ footer{
 
 footer p{
   color: #f0f0f0;
-  background: linear-gradient(90deg,#cc1020,#164080);
+  /* background: linear-gradient(90deg,#cc1020,#164080); */
+  border-top: solid 1px #888888;
   padding-left: 2%;
   margin-bottom: 0;
 }
