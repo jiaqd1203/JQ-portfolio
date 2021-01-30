@@ -98,25 +98,29 @@ nav {
   margin-bottom: 200px;
   /* #154284 */
   /* background: linear-gradient(90deg,#cd122d,#154284); */
-  background-color: #161a1d;
+  /* background-color: #161a1d; */
   border-radius: 5px;
   width: 100%;
 }
 
+
+
 #skill-section .skills{
  padding: 0 16px;
  text-align: center;
- background: linear-gradient(90deg,#cd122d,#154284);
+ /* background: linear-gradient(90deg,#cd122d,#154284); */
 }
 
 #skill-section .skills .skill{
   cursor: pointer;
   background-color: #fff;
+  width: 100px;
   list-style: none;
   margin: 20px auto;
   padding: 14px;
   border-radius: 4%;
   transition: 250ms transform ease-in-out;
+  padding: 14px 10px;
 }
 
 #skill-section .skills .skill:hover{
