@@ -8,9 +8,8 @@
 
 body{
   /* background-color: #1d1d1d; */
-  background-color: #939597;
-  background-color: #F5DF4D;
   background-color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
@@ -102,7 +101,7 @@ nav {
   padding: 150px;
   border-radius: 5px;
   width: 100%;
-  background-color: #f5df4d;
+  background-color: #F5DF4D;
 }
 
 
@@ -141,8 +140,6 @@ nav {
   /* height: 100vh; */
   width: 100%;
   /* background-color: #161a1d; */
-  background-color: #F5DF4D;
-  background-color: #fff;
   background-color: #939597;
   padding-top: 20px;
 }
@@ -153,7 +150,7 @@ nav {
   width: 400px;
   font-size: 3rem;
   font-weight: 700;
-  margin: 0 auto;
+  margin: 40px auto;
   line-height: 100px;
   color: #000000;
 }
@@ -176,40 +173,75 @@ nav {
 
 #projects .project{
   position: relative;
+  overflow: hidden;
+  text-align: center;
+  height: 300px;
+  margin-bottom: 40px;
+}
+
+
+#projects .project:hover .description{
+  position: absolute;
+  top: 0px;
+  left:10%;
+}
+
+#projects .project:hover .button{
+  position: absolute;
+  top: 200px;
+  left: 10%;
 }
 
 #projects .project .description{
-  box-sizing: border-box;  
+  box-sizing: content-box;
+  border: none;
   width: 80%;
   height: 200px;
   position: absolute;
-  top: -190px;
+  top: -200px;
   left:10%;
-  background-color: #fff;
+  background-color: #f5f5f5;
+  transition: all 0.5s ease;
 }
 
 #projects .project .description h3{
-
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-weight: 700;
 }
 
 #projects .project .description p{
   font-size: 1rem;
   font-weight: 400;
+  color: #02b2b8;
 }
 
 #projects .project .button{
   width: 80%;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  height: 100px;
   position: absolute;
-  top: 310px;
+  top: 300px;
   left: 10%;
+  transition: all 0.5s ease;
+  background-color: #f5f5f5;
 }
 
-#projects .project .button span{
+#projects .project .button a{
+  color: #141414;
   width: 170px;
+  height: 50px;
+  line-height: 46px;
   display: block;
-  margin: 0 auto;
-  padding: 10px 0;
+  margin: 25px auto;
+  border: 2px solid #02b2b8;
+  text-decoration: none;
+}
+
+#projects .project .button a:hover{
+  background-color: #02b2b8;
+  color: #f5f5f5;
+  transition: all 0.5s ease;
 }
 
 #projects div img{  
@@ -244,16 +276,11 @@ nav {
   cursor: pointer;
 }
 
-#projects .project{
-  padding-top: 10px; 
-  text-align: center; 
-}
-
 #contact{
   width: 100%;
   background-color: #000000;
   color: #f0f0f0;
-  border-top: 1px solid;
+  border-top: 1px solid #F5DF4D;
 }
 
 #contact .container{
