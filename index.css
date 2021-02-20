@@ -115,13 +115,21 @@ nav {
 #skill-section .skills .skill{
   cursor: pointer;
   background-color: #fff;
-  width: 100px;
+  width: 120px;
   list-style: none;
-  margin: 20px auto;
-  padding: 14px;
+  margin: 20px auto;  
   border-radius: 4%;
   transition: 250ms transform ease-in-out;
   padding: 14px 10px;
+}
+
+#skill-section .skills .skill .progress{
+  margin-top: 12px;
+  border-color: #939597;
+}
+
+@media screen and (max-width:1200px){
+ 
 }
 
 #skill-section .skills .skill:hover{
@@ -129,11 +137,32 @@ nav {
   transition: 250ms transform ease-in-out;
 }
 
+#skill-section .skills .skill .progress-1{
+  background-color: #05c215;
+}
+
+#skill-section .skills .skill .progress-2{
+  background-color: #0cee0c;
+}
+
+#skill-section .skills .skill .progress-3{
+  background-color: #f1bb25;
+}
+
+#skill-section .skills .skill .progress-4{
+  background-color: #eb6416;
+}
+
+#skill-section .skills .skill .progress-5{
+  background-color: #e01822;
+}
+
 #skill-section ul li h3{
   display: block;
   font-size: 1rem;
   font-weight: 600;
   color: #000000;
+  /* color: #939597; */
 }
 
 #projects{
@@ -382,7 +411,6 @@ nav {
 }
 
 #contact form .contact-button{ 
-  /* background-color: #cd122d; */
   background-color: transparent;
   color: #f0f0f0;
   font-size: 1.5rem;
@@ -394,7 +422,6 @@ nav {
 }
 
 #contact form .contact-button:hover{
-  /* animation-duration: 2s; */
   /* background: linear-gradient(270deg,#154284,#cd122d);   */
   box-shadow: 0 0.1rem 0.4rem 0 rgba(0,0,0,.5);
   transform: translateY(.1rem);
