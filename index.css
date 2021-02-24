@@ -206,20 +206,19 @@ nav {
   text-align: center;
   height: 300px;
   margin-bottom: 40px;
-  opacity: 50%;
+  opacity: 0;
   transition: all .5s;
 }
 
 #projects .align-left{
   transform: translateX(-30%) scale(0.95);
-
 }
 
 #projects .align-right{
   transform: translateX(30%) scale(0.95); 
 }
-
-.project .active {
+/* 连续的中间没空格的就是同时选中带两个class的元素 */
+#projects .project.active {
   opacity: 1; 
   transform: translateX(0%) scale(1); 
 }
