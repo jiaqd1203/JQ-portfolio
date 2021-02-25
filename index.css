@@ -94,7 +94,45 @@ nav {
     text-align: center;
     font-size: 3rem;
     color: #939597;
-    opacity: 70%;    
+    opacity: 70%; 
+}
+
+#welcome-section p span{
+  position: relative;
+  padding-right: 5px;   
+}
+
+#welcome-section p span::after{
+  padding-right: 5px;
+  content: "a web developer";
+  color: transparent;
+  font-style: italic;
+  position: absolute;
+  top: -9px;
+  left: 0;
+  -webkit-clip-path: ellipse(100px 100px at 0% 50%);
+  clip-path: ellipse(100px 100px at 0% 50%);
+  animation: spotlight 8s infinite;
+  background-image: url(https://img.ixintu.com/download/png/201911/bd1524423e63e961c34c67f7eaf20c1d.png!con);
+  /* background-image: url(https://images.unsplash.com/photo-1548350896-fafc317d3ceb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80); */
+  background-size: 150%;
+  background-position: center center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+}
+@keyframes spotlight{
+  0%{
+    clip-path: ellipse(100px 100px at 0% 50%);
+  }
+
+  50%{
+    clip-path: ellipse(100px 100px at 100% 50%);
+  }
+
+  100%{
+    clip-path: ellipse(100px 100px at 0% 50%);
+  }
 }
 
 #skill-section{
