@@ -242,10 +242,14 @@ nav {
   position: relative;
   overflow: hidden;
   text-align: center;
-  height: 300px;
+  height: 350px;
   margin-bottom: 40px;
   opacity: 0;
   transition: all .5s;
+}
+
+#projects .project:hover{  
+  border-radius: 5px;
 }
 
 #projects .align-left{
@@ -261,34 +265,16 @@ nav {
   transform: translateX(0%) scale(1); 
 }
 
-#projects .project:hover img{
-  opacity: 0;
-  transition: all 0.5s ease;
-}
-
-/* #projects .project:hover .description{ 
-  position: absolute;
-  top: 0px;
-  left:10%;
-}*/
-
-#projects .project:hover .button{
-  position: absolute;
-  top: 200px;
-  left: 10%;
-  transition: all 0.5s ease;
-}
-
 #projects .project .description{
   box-sizing: content-box;
   border: none;
+  transition: all 0.5s ease;
   /* width: 80%;
   height: 200px;
   position: absolute;
   top: -200px;
   left:10%;
   background-color: #fff;*/
-  transition: all 0.5s ease;
 }
 
 #projects .project .description h3{
@@ -308,35 +294,92 @@ nav {
   transition: all 1s ease;
 }
 
-#projects .project .description p{
+#projects .project .skills-list{
   position: absolute;
   right: -70%;
-  top: 100px;
+  top: 80px;
   width: 40%;
   font-size: 1rem;
   font-weight: 400;
   color: #02b2b8;
 }
 
-#projects .project:hover .description p{
+#projects .project:hover .skills-list{
   position: absolute;
   right: 30%;
-  top: 100px;
   font-size: 1rem;
   font-weight: 400;
   color: #02b2b8;
   transition: all 1s ease;
 }
 
+/* #projects div .skills-list{ 
+  display: inline-block;
+  width: 100%;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 5px 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #f0f0f0;
+  text-align: center;
+  
+}
+
+#projects div .skills-list:hover{
+  cursor: pointer;
+}
+*/
+#projects .project .project-info{
+  position: absolute;
+  right: 25%;
+  top: 150px;
+  width: 50%;
+  font-size: 1rem;
+  font-style: italic;
+  color: #6b6b6b;
+  /* display: none; */
+  opacity: 0;
+}
+
+#projects .project:hover .project-info{
+  /* display: block; */
+  opacity: 1;
+  transition: all 1.5s ease;
+}
+
+#projects div img{  
+  width: 80%;
+  height: 350px;
+}
+
+#projects .project:hover img{
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+/* #projects .project:hover .description{ 
+  position: absolute;
+  top: 0px;
+  left:10%;
+}*/
+
 #projects .project .button{
   width: 80%;
   font-size: 1.4rem;
   height: 100px;
   position: absolute;
-  top: 300px;
+  top: 350px;
   left: 10%;
   /* background-color: #f5f5f5; */
   /* background-color: #fff; */
+}
+
+#projects .project:hover .button{
+  position: absolute;
+  top: 250px;
+  left: 10%;
+  transition: all 0.5s ease;
 }
 
 #projects .project .button a{
@@ -354,38 +397,6 @@ nav {
   background-color: #02b2b8;
   color: #f5f5f5;
   transition: all 0.5s ease;
-}
-
-#projects div img{  
-  width: 80%;
-  height: 300px;
-}
-
-#projects div .project:hover{  
-  border-radius: 5px;
-}
-
-#projects div .project:hover p{
-  border-top: none;
-
-}
-
-#projects div p{
-  display: inline-block;
-  width: 100%;
-  font-weight: 700;
-  font-size: 1.2rem;
-  padding: 5px 0;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  color: #f0f0f0;
-  text-align: center;
-  color: #000;
-  
-}
-
-#projects div p:hover{
-  cursor: pointer;
 }
 
 #contact{
