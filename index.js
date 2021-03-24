@@ -1,6 +1,4 @@
-window.onload = function(){
-
-  
+window.onload = function(){  
     function slide(){
     // 不加[]代表数组，[]代表具体元素
     // 获取所有project
@@ -24,6 +22,9 @@ window.onload = function(){
       }  
     }
     window.addEventListener('scroll', slide);
+
+    // 设置移入移出project的动画
+    
 }
 /*
         // 滚动到project框从底部探出一半的位置(视口viewport高度+页面滚动的距离而不是滚动条的-图片高度一半)

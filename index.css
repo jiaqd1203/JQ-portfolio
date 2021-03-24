@@ -266,42 +266,65 @@ nav {
   transition: all 0.5s ease;
 }
 
-#projects .project:hover .description{
+/* #projects .project:hover .description{ 
   position: absolute;
   top: 0px;
   left:10%;
-}
+}*/
 
 #projects .project:hover .button{
   position: absolute;
   top: 200px;
   left: 10%;
-
 }
 
 #projects .project .description{
   box-sizing: content-box;
   border: none;
-  width: 80%;
+  /* width: 80%;
   height: 200px;
   position: absolute;
   top: -200px;
   left:10%;
-  /* background-color: #f5f5f5; */
-  background-color: #fff;
+  background-color: #fff;*/
   transition: all 0.5s ease;
 }
 
 #projects .project .description h3{
+  position: absolute;
+  width: 40%;
+  left: -40%;
+  top: 0;
   margin-top: 40px;
   margin-bottom: 10px;
   font-weight: 700;
 }
 
+#projects .project:hover .description h3{
+  position: absolute;
+  left: 30%;
+  top: 0;
+  transition: all 1s ease;
+}
+
 #projects .project .description p{
+  position: absolute;
+  right: -70%;
+  top: 100px;
+  width: 40%;
   font-size: 1rem;
   font-weight: 400;
   color: #02b2b8;
+}
+
+#projects .project:hover .description p{
+  position: absolute;
+  right: 30%;
+  top: 100px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #02b2b8;
+  transition: all 1s ease;
 }
 
 #projects .project .button{
@@ -311,9 +334,8 @@ nav {
   position: absolute;
   top: 300px;
   left: 10%;
-  transition: all 0.5s ease;
   /* background-color: #f5f5f5; */
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 
 #projects .project .button a{
@@ -482,6 +504,8 @@ nav {
   border-color: #02b2b8;
   transition: all 0.2s ease;
 }
+
+
 
 .contact-links{
   display: flex;
